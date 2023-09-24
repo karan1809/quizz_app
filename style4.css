@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins','sans-serif';
+    box-sizing: border-box;
+}
+
+body{
+    background: #C7F3C0;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0; width: 100%;
+    padding: 20px 100px; background:#4EB33E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    }
+
+    .logo {
+        font-size: 2em;
+        color:#fff;
+        user-select: none;
+    
+    }
+    .navigation a{
+        position: relative;
+        font-size: 1.1em;
+        color:#fff;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 40px;
+    }
+    
+    .navigation a::after {
+        content:'';
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        border-radius: 5px;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform .5s; 
+    }
+    .navigation a:hover::after {
+        transform-origin: left;
+        transform: scaleX(1);
+    }
+    .navigation .btnlogin-popup {
+        width: 130px;
+        height: 50px;
+        background: transparent;
+        border: 2px solid #fff;
+        outline: none;
+        cursor: pointer;
+        font-size: 1.1em;
+        color:#fff;
+        font-weight: 500;
+        margin-left: 40px;
+    }
+    .navigation .btnlogin-popup:hover {
+        background:  #fff;
+        color: #162938
+    }
+    
+.app{
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+.app h1{
+    font-weight: 25px;
+    color:#4EB33E;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+.quiz{
+    padding: 20px 0;
+}
+.quiz h2{
+    font-size: 18px;
+     color: #222;
+     font-weight: 600;
+}
+.btn{
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;   
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn:hover:not([disabled]){
+    background: #222 ;
+    color:#fff;
+}
+.btn:disabled{
+    cursor: no-drop;
+}
+#next-btn{
+    background: #4EB33E;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+.correct{
+    background: #9aeabc;
+}
+.incorrect{
+    background: #ff9393;
+} 
+.custom-btn {
+    background:#4EB33E;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
